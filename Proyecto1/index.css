@@ -1,17 +1,39 @@
 body{
-    background-image: none
+    background-image: url("https://i1.wp.com/somostechbros.com/wp-content/uploads/2020/11/YOUTUBE-KIDS.png?fit=1500%2C945");
+}
+
+.box{
+    display: flex;
 }
 
 .menu{
-    color:darkblue
+    color:darkblue;
+    height: 200px;
+    width: 100%;
+    background-color: aliceblue;
 }
-    
 
+.menu1{
+    height: 200px;
+    width: 25%;
+    background-color: aliceblue;
+}
+
+.menu2{
+    height: 200px;
+    width: 50%;
+    background-color: aqua;
+}
+
+.menu3{
+    height: 200px;
+    width: 25%;
+    background-color: aquamarine;
+}
 
 .jersey-15-regular {
     font-family: "Jersey 15", sans-serif;
     font-weight: 400;
-    font-style: normal;
-  
+    font-style: normal;  
 }
   
