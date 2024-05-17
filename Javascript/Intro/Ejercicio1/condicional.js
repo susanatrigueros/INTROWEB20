@@ -101,28 +101,79 @@ if(INTnumero_A > INTnumero_B && INTnumero_A > INTnumero_C)
     otro mensaje diferente si es viernes, 
     otro mensaje diferente si es sábado o domingo. 
     Si el día ingresado no es ninguno de esos, imprimir otro mensaje.
+
+var dia = prompt("Ingresa un dia de la semana")
+
+if(dia=="lunes")
+{
+    alert("Lunes inicio de semana")
+}else if(dia=="viernes")
+{
+    alert("Viernes la vida comienza")
+}else if(dia=="sabado" || dia=="domingo")
+{
+    alert(dia + " Esto es vida")
+}else{
+    alert("Estas fuera")
+}
 */
 
 /*
-8. Solicitar al usuario una calificación (entre 1 y 10). Luego se debe comprobar que el número efectivamente esté en ese rango, si no lo está imprima un mensaje de error. Si lo está, imprima “reprobado” si la calificación es inferior a 6, “regular” si está entre 6 y 8, “bien” si es 9, y por último, “excelente” si es 10.
-9. Escribe un programa que responda a un usuario que quiere comprar un helado en una conocida marca de comida rápida cuánto le costará en función del topping que elija.
-El helado sin topping cuesta 50 MXN.
-El topping de oreo cuesta 10 MXN.
-El topping de KitKat cuesta 15 MXN.
-El topping de brownie cuesta 20 MXN.
-En caso de no disponer del topping solicitado por el usuario, el programa le indicará “no tenemos este topping, lo sentimos.” y a continuación le informará el precio del helado sin ningún topping.
-10. Un conocido portal de educación en tecnología está ofreciendo programas para aprender a desarrollar aplicaciones. Escribe un programa que le indique a la persona interesada cuánto deberá pagar mensualmente de acuerdo a la opción elegida.
-El programa educativo contempla 3 diferentes niveles, cada uno con su costo mensual: Course: $4999 MXN
-Carrera $3999 MXN
-Master: $2999 MXN
-Adicionalmente preguntar si cuenta con alguna beca y aplicar el descuento correspondiente al precio final.
-Beca Facebook: 20% de descuento.
-Beca Google: 15% de descuento.
-Beca Jesua: 50% de descuento.
-Finalmente, además del precio mensual con descuento, indicar al usuario cuánto gastaría en total por el curso elegido, tomando en cuenta las siguientes duraciones:
-Course: 2 meses
-Carrera 6 meses
-Master: 12 meses
+8. Solicitar al usuario una calificación (entre 1 y 10). 
+    Luego se debe comprobar que el número efectivamente esté en ese rango, 
+    si no lo está imprima un mensaje de error. Si lo está, imprima “reprobado” 
+    si la calificación es inferior a 6, “regular” si está entre 6 y 8, “bien” si es 9, 
+    y por último, “excelente” si es 10.
+
+
+var calificacion = prompt("Ingresa una calificacion del 1 al 10")
+var INTcalificacion = parseInt(calificacion)
+if(INTcalificacion >=1 && INTcalificacion<6)
+{
+    alert("Reprobado")
+
+}else if(INTcalificacion >6 && INTcalificacion <=8)
+{
+    alert("Regular")
+}else if(INTcalificacion ==9)
+{
+    alert("Bien")
+}else if(INTcalificacion == 10)
+{
+    alert("Excelente")
+}else{
+    alert("Error")
+}
+*/
+
+/*
+9. Escribe un programa que responda a un usuario que quiere comprar un helado
+    en una conocida marca de comida rápida cuánto le costará en función del topping que elija.
+    El helado sin topping cuesta 50 MXN.
+    El topping de oreo cuesta 10 MXN.
+    El topping de KitKat cuesta 15 MXN.
+    El topping de brownie cuesta 20 MXN.
+    En caso de no disponer del topping solicitado por el usuario, el programa le indicará “no tenemos este topping, lo sentimos.” 
+    y a continuación le informará el precio del helado sin ningún topping.
+*/
+
+
+/*
+10. Un conocido portal de educación en tecnología está ofreciendo programas para aprender a desarrollar aplicaciones. 
+    Escribe un programa que le indique a la persona interesada cuánto deberá pagar mensualmente de acuerdo a la opción elegida.
+    El programa educativo contempla 3 diferentes niveles, cada uno con su costo mensual: Course: $4999 MXN
+    Carrera $3999 MXN
+    Master: $2999 MXN
+    Adicionalmente preguntar si cuenta con alguna beca y aplicar el descuento correspondiente al precio final.
+    Beca Facebook: 20% de descuento.
+    Beca Google: 15% de descuento.
+    Beca Jesua: 50% de descuento.
+    Finalmente, además del precio mensual con descuento, indicar al usuario cuánto gastaría en total por el curso elegido, tomando en cuenta las siguientes duraciones:
+    Course: 2 meses
+    Carrera 6 meses
+    Master: 12 meses
+
+/*
 11. Realizar un programa que ayude a calcular el total a pagar de acuerdo a la distancia recorrida por un vehículo con cargo extra por los litros consumidos, tomando en consideración lo siguiente:
 Si el vehículo es “coche”, el precio kilometro ha de ser 0.20, si es “moto” ha de ser 0.10 y si es “autobús” 0.5.
 Si los litros consumidos están entre 0 y 100 se ha de añadir 5 al costo total, si es mayor la cantidad de litros consumidos se ha de añadir 10 al total. Considere qué:
